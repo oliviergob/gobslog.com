@@ -5,11 +5,10 @@ import styled from "styled-components"
 
 
 const StyledHeader = styled.div`
-  margin: 1px 0px;
-  padding: 4px 6%;
+  margin: 5px 0px;
+  padding: 4px 8%;
   width: 100%;
-  box-shadow: 1px 1px #EAE7E0;
-  background-color: #fffefd;
+  
 `
 
 

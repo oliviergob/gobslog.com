@@ -1,7 +1,8 @@
 ---
-title: Automate your Web Frontend build and deployment with AWS Amplify
+title: Serverless Webapp in AWS - Part 1 - Frontend with AWS Amplify
 date: "2022-02-27T09:02:22.284Z"
 description: "Automate the build and deployment of your frontend using AWS Amplify"
+image: ./amplifier.jpg
 ---
 
 I will focus here on the app deployment. I will build a simple page using Bulma CSS Framework and package the app using Webpack. The learnings here should apply with any other app framework or build tool.
@@ -33,3 +34,28 @@ npm install html-webpack-plugin --save-dev
 Create a webpack.config.js file with the css loaders and a dev server for testing.
 
 embed-url-code https://raw.githubusercontent.com/oliviergob/aws-training-amplify/main/webpack.config.js js
+
+
+Create a src folder and a ```index.js``` file:
+
+embed-url-code https://github.com/oliviergob/aws-training-amplify/blob/main/src/index.js js
+
+
+Inside the same src folder, add a file called ```mystyles.scss```: 
+
+embed-url-code https://raw.githubusercontent.com/oliviergob/aws-training-amplify/main/src/mystyles.scss css
+
+
+Create a public directory and an ```index.html``` file inside of it:
+
+embed-url-code https://raw.githubusercontent.com/oliviergob/aws-training-amplify/main/public/index.html html
+
+
+You can now start the app using
+```
+npm start
+```
+
+You should get somthing like that:
+
+![simple website](./simple-web-app.png "simple web site")

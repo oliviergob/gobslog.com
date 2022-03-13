@@ -102,6 +102,7 @@ module.exports = {
                     frontmatter {
                       title
                       date
+                      image
                     }
                   }
                 }

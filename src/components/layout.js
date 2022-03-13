@@ -18,7 +18,7 @@ const SplitLayout = styled.div`
 `
 
 const ScrollBar = styled(SimpleBar)`
-  max-height: 74vh;
+  max-height: 87vh;
   overflowX: hidden;
   min-width: 45vw;
   max-width: 45vw;
@@ -42,12 +42,12 @@ const Layout = ({ location, title, children }) => {
               <ScrollContainer>
                 <main>{children}</main>
               </ScrollContainer>
+              <footer>
+                © {new Date().getFullYear()}, Built with
+                {` `}
+                <a href="https://www.gatsbyjs.com">Gatsby</a>
+              </footer>
             </ScrollBar>
-            <footer>
-              © {new Date().getFullYear()}, Built with
-              {` `}
-              <a href="https://www.gatsbyjs.com">Gatsby</a>
-            </footer>
           </div>
           <aside>
             <Bio />
