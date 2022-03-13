@@ -5,7 +5,12 @@ description: "Automate the build and deployment of your frontend using AWS Ampli
 image: ./amplifier.jpg
 ---
 
-I will focus here on the app deployment. I will build a simple page using Bulma CSS Framework and package the app using Webpack. The learnings here should apply with any other app framework or build tool.
+In this tutorial we will do two things:
+* Create a simple webapp using Bulma CSS Framework and Webpack for packaging
+* Automate the deployment of it using AWS Amplify
+
+The first part is just so we have something to deploy. You can skip to the second one if you already have a frontend ready to deploy.
+I use Bulma and Webpack for simplicity, the learnings here should apply with any other app framework or build tool.
 
 
 ## Creating the App
