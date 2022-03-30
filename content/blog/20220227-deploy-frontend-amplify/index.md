@@ -2,7 +2,7 @@
 title: Serverless Webapp in AWS - Part 1 - Frontend with AWS Amplify
 date: "2022-02-27T09:02:22.284Z"
 description: "Automate the build and deployment of your frontend using AWS Amplify"
-image: ./amplifier.jpg
+image: ./amplifier.png
 ---
 
 In this tutorial we will do two things:

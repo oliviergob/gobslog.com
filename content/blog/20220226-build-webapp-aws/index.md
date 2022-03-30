@@ -2,6 +2,7 @@
 title: Build a Serverless Web App in AWS
 date: "2022-02-26T00:48:03.284Z"
 description: "Automate the build and deployment of both frontend and backend using Amplify, API Gateway, Lambda, Cognito, S3, CLoudfront"
+image: ./webapp-react-unsplash.png
 ---
 
 * Getting started with Amplify for automated Frontend deployment

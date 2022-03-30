@@ -13,15 +13,15 @@ const StyledMain = styled.div`
 const SplitLayout = styled.div`
   display: flex;
   justify-content: center;
-  width: 70%;
+  width: 85%;
   margin: auto;
 `
 
 const ScrollBar = styled(SimpleBar)`
   max-height: 87vh;
   overflowX: hidden;
-  min-width: 45vw;
-  max-width: 45vw;
+  min-width: 65vw;
+  max-width: 65vw;
 `
 
 const ScrollContainer = styled.div`
@@ -37,10 +37,9 @@ const Layout = ({ location, title, children }) => {
       <StyledMain>
         <Header title={title}/>
         <SplitLayout>
-          <div className="global-wrapper" data-is-root-path={isRootPath}>
             <ScrollBar>
               <ScrollContainer>
-                <main>{children}</main>
+                {children}
               </ScrollContainer>
               <footer>
                 © {new Date().getFullYear()}, Built with
@@ -48,7 +47,6 @@ const Layout = ({ location, title, children }) => {
                 <a href="https://www.gatsbyjs.com">Gatsby</a>
               </footer>
             </ScrollBar>
-          </div>
           <aside>
             <Bio />
           </aside>

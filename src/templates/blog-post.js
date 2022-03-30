@@ -4,6 +4,12 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import styled from "styled-components"
+
+const PostContainer = styled.div`
+  width: 70%;
+  margin: auto;
+`
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
@@ -14,6 +20,7 @@ const BlogPostTemplate = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
+        <PostContainer>
           <Seo
             title={post.frontmatter.title}
             description={post.frontmatter.description || post.excerpt}
@@ -25,7 +32,7 @@ const BlogPostTemplate = ({ data, location }) => {
             itemType="http://schema.org/Article"
           >
             <header>
-              <h1 itemProp="headline">{post.frontmatter.title}</h1>
+              <h2 itemProp="headline">{post.frontmatter.title}</h2>
               <GatsbyImage image={image} />
               <p>{post.frontmatter.date}</p>
             </header>
@@ -63,7 +70,7 @@ const BlogPostTemplate = ({ data, location }) => {
               </li>
             </ul>
           </nav>
-      
+      </PostContainer>
     </Layout>
   )
 }
