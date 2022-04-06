@@ -15,11 +15,11 @@ const SplitLayout = styled.div`
 `
 const Tile = styled.div`
   flex: 0 0 50%;
-  max-width: 50%;
   position: relative;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
+  min-width: 300px;
 `
 
 const BlogIndex = ({ data, location }) => {

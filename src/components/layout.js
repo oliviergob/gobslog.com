@@ -12,16 +12,16 @@ const StyledMain = styled.div`
 `
 const SplitLayout = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  width: 85%;
   margin: auto;
 `
 
 const ScrollBar = styled(SimpleBar)`
   max-height: 87vh;
   overflowX: hidden;
-  min-width: 65vw;
-  max-width: 65vw;
+  max-width: 1100px;
+  flex: 95%;
 `
 
 const ScrollContainer = styled.div`
@@ -29,8 +29,7 @@ const ScrollContainer = styled.div`
 `
 
 const Layout = ({ location, title, children }) => {
-  const rootPath = `${__PATH_PREFIX__}/`
-  const isRootPath = location.pathname === rootPath
+
 
   return (
     <div>

@@ -7,7 +7,7 @@ import Seo from "../components/seo"
 import styled from "styled-components"
 
 const PostContainer = styled.div`
-  width: 70%;
+  width: 83%;
   margin: auto;
 `
 
@@ -34,6 +34,7 @@ const BlogPostTemplate = ({ data, location }) => {
             <header>
               <h2 itemProp="headline">{post.frontmatter.title}</h2>
               <GatsbyImage image={image} />
+              
               <p>{post.frontmatter.date}</p>
             </header>
             <section

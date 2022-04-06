@@ -85,7 +85,7 @@ body {
 }
 
 footer {
-  padding: var(--spacing-4) var(--spacing-0) var(--spacing-1);
+  padding: var(--spacing-4) var(--spacing-2) var(--spacing-1);
 }
 
 hr {
@@ -166,7 +166,7 @@ p {
   line-height: var(--lineHeight-relaxed);
   --baseline-multiplier: 0.179;
   --x-height-multiplier: 0.35;
-  margin: var(--spacing-0) var(--spacing-0) var(--spacing-8) var(--spacing-0);
+  margin: var(--spacing-2) var(--spacing-0) var(--spacing-4) var(--spacing-0);
   padding: var(--spacing-0);
 }
 
@@ -298,6 +298,7 @@ a:focus {
   display: flex;
   margin-bottom: var(--spacing-16);
   margin-top: var(--spacing-16);
+  margin-left: var(--spacing-2);
 }
 
 .bio p {
