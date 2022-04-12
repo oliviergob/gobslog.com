@@ -1,5 +1,5 @@
 ---
-title: Serverless Webapp in AWS - Part 1 - Front End with AWS Amplify
+title: Serverless Web App in AWS - Part 1 - Front End with AWS Amplify
 date: "2022-02-27T09:02:22.284Z"
 description: "Automate the build and deployment of your Front End using AWS Amplify"
 image: ./amplifier.png
@@ -10,7 +10,7 @@ This blog post is part of series on [How to build and deploy a serverless web ap
 
 
 In this post we will learn two things:
-* Create a simple webapp using Bulma CSS Framework and Webpack for packaging
+* Create a simple front end using Bulma CSS Framework and Webpack for packaging
 * Automate the deployment of it using AWS Amplify
 
 The first part is just so we have something to deploy. You can skip to the second one if you already have a Front End ready to deploy.
