@@ -5,7 +5,7 @@ description: "Automate the build and deployment of your Front End using AWS Ampl
 image: ./amplifier.png
 ---
 
-This blog post is part of series on [How to build and deploy a serverless web app on AWS](../20220226-build-webapp-aws/).
+This blog post is part of a series on [How to build and deploy a serverless web app on AWS](../20220226-build-webapp-aws/).
 
 
 
@@ -42,22 +42,22 @@ npm install html-webpack-plugin --save-dev
 
 Create a webpack.config.js file with the css loaders and a dev server for testing.
 
-embed-url-code https://raw.githubusercontent.com/oliviergob/aws-training-amplify/main/webpack.config.js js
+embed-url-code https://raw.githubusercontent.com/oliviergob/aws-tutorial-serverless-frontend/main/webpack.config.js js
 
 
 Create an src folder and a ```index.js``` file:
 
-embed-url-code https://github.com/oliviergob/aws-training-amplify/blob/main/src/index.js js
+embed-url-code https://github.com/oliviergob/aws-tutorial-serverless-frontend/blob/main/src/index.js js
 
 
 Inside the same src folder, add a file called ```mystyles.scss```: 
 
-embed-url-code https://raw.githubusercontent.com/oliviergob/aws-training-amplify/main/src/mystyles.scss css
+embed-url-code https://raw.githubusercontent.com/oliviergob/aws-tutorial-serverless-frontend/main/src/mystyles.scss css
 
 
 Create a public directory and an ```index.html``` file inside of it:
 
-embed-url-code https://raw.githubusercontent.com/oliviergob/aws-training-amplify/main/public/index.html html
+embed-url-code https://raw.githubusercontent.com/oliviergob/aws-tutorial-serverless-frontend/main/public/index.html html
 
 
 You can now start the app using
@@ -73,7 +73,7 @@ You should get something like that:
 ## Deploying the App in Amplify
 
 * create a file named ```amplify.yaml``` at the root of your repository. You can change or add build commands if you are using a different build tool or command
-embed-url-code https://raw.githubusercontent.com/oliviergob/aws-training-amplify/main/amplify.yaml yaml
+embed-url-code https://raw.githubusercontent.com/oliviergob/aws-tutorial-serverless-frontend/main/amplify.yaml yaml
 
 
 * In the AWS Console, navigate AWS Amplify
